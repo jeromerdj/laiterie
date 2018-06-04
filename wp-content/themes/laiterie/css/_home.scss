@@ -1,0 +1,167 @@
+.artiste-avant {
+    .image-artiste-avant {
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .texte-artiste-avant {
+            color:  #00e5c4;
+            font-weight: 600;
+            font-size: 28px;
+            margin: 50px;
+            h1 {
+            font-size: 28px;
+            font-weight: 600;
+            text-transform: uppercase;
+            }
+            .une {
+                color: white;
+                font-weight: 400;
+            }
+            .en-concert {
+                color: white;
+                font-weight:400;
+            }
+            .date {
+                font-size: 22px;
+            }
+            hr {
+                border-color:#00e5c4;
+                width: 3%;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+
+.programmation-miniature {
+    background-image: url('http://localhost/laiterie/wp-content/uploads/2018/05/fond-texture-2.png');
+    background-size: 80%;
+    background-position: center;
+    padding: 30px 0;
+    .one-prog {
+        height: 490px;
+        color: white;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .textes-prog {
+            bottom:40px;
+            left:40px;
+            z-index: 1000;
+            .date-prog{
+                font-weight: 600;
+                color:#00e5c4;
+                font-size: 18px;
+            }
+            .artiste-prog{
+                font-weight: 600;
+                font-size: 18px;
+            }
+            .lieu-prog {
+                margin:10px 0 30px 0;
+                .placeholder {
+                    margin-right: 10px;
+                    width: 15px;
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+    .btn-toute-prog {
+        font-size: 18px;
+        padding: 7px 12px;
+        text-decoration:none;
+        background: #00e5c4;
+        font-weight: 600;
+        color: white;
+        width: 217px;
+        text-align: center;
+        display: block;
+        margin: 40px 0 50px 0;
+    }
+}
+
+
+.hover-artiste{
+    transition: 0.3s ease;
+    background: #00e5c4;
+    height: 100%;
+    width:100%;
+    opacity: 0;
+}
+.one-prog:hover .hover-artiste{
+    opacity: 0.1;
+}
+
+.a-propos {
+    color: white;
+    padding: 50px 0;
+    h2 {
+        padding-top:30px;
+    }
+    .btn-acheter-billet {
+        margin-top: 30px;
+    }
+}
+
+.partenaires {
+    padding: 50px 0;
+    .logos-partenaires {
+        padding: 0px 10px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .artiste-avant {
+        .image-artiste-avant {
+
+            background-position: 62% 50%;
+            .gradient {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+                background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 16%, rgba(0,0,0,0) 68%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 16%,rgba(0,0,0,0) 68%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, rgba(0,0,0,0.65) 16%,rgba(0,0,0,0) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+                position: absolute;
+                width:100%;
+                height: 100%;
+            }
+            .texte-artiste-avant {
+                margin: 40px 20px;
+                position: absolute;
+                .une {
+                    font-size: 20px;
+                }
+                hr {
+                    width: 20%;
+                }
+                .date {
+                    margin-bottom:30px;
+                }
+            }
+        }
+    }
+
+    .a-propos {
+        p {
+            padding: 20px;
+        }
+    }
+
+    .partenaires {
+        .row {
+            div {
+                flex-direction: column;
+                .logos-partenaires {
+                    margin-bottom:20px;
+                }
+            }
+        }
+    }
+}

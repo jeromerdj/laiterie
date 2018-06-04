@@ -1,0 +1,130 @@
+.artiste-avant .image-artiste-avant {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .artiste-avant .image-artiste-avant .texte-artiste-avant {
+    color: #00e5c4;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 50px; }
+    .artiste-avant .image-artiste-avant .texte-artiste-avant h1 {
+      font-size: 28px;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .artiste-avant .image-artiste-avant .texte-artiste-avant .une {
+      color: white;
+      font-weight: 400; }
+    .artiste-avant .image-artiste-avant .texte-artiste-avant .en-concert {
+      color: white;
+      font-weight: 400; }
+    .artiste-avant .image-artiste-avant .texte-artiste-avant .date {
+      font-size: 22px; }
+    .artiste-avant .image-artiste-avant .texte-artiste-avant hr {
+      border-color: #00e5c4;
+      width: 3%;
+      display: inline-block; }
+
+.programmation-miniature {
+  background-image: url("http://localhost/laiterie/wp-content/uploads/2018/05/fond-texture-2.png");
+  background-size: 80%;
+  background-position: center;
+  padding: 30px 0; }
+  .programmation-miniature .one-prog {
+    height: 490px;
+    color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .programmation-miniature .one-prog .textes-prog {
+      bottom: 40px;
+      left: 40px;
+      z-index: 1000; }
+      .programmation-miniature .one-prog .textes-prog .date-prog {
+        font-weight: 600;
+        color: #00e5c4;
+        font-size: 18px; }
+      .programmation-miniature .one-prog .textes-prog .artiste-prog {
+        font-weight: 600;
+        font-size: 18px; }
+      .programmation-miniature .one-prog .textes-prog .lieu-prog {
+        margin: 10px 0 30px 0; }
+        .programmation-miniature .one-prog .textes-prog .lieu-prog .placeholder {
+          margin-right: 10px;
+          width: 15px;
+          margin-top: -3px; }
+  .programmation-miniature .btn-toute-prog {
+    font-size: 18px;
+    padding: 7px 12px;
+    text-decoration: none;
+    background: #00e5c4;
+    font-weight: 600;
+    color: white;
+    width: 217px;
+    text-align: center;
+    display: block;
+    margin: 40px 0 50px 0; }
+
+.hover-artiste {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #00e5c4;
+  height: 100%;
+  width: 100%;
+  opacity: 0; }
+
+.one-prog:hover .hover-artiste {
+  opacity: 0.1; }
+
+.a-propos {
+  color: white;
+  padding: 50px 0; }
+  .a-propos h2 {
+    padding-top: 30px; }
+  .a-propos .btn-acheter-billet {
+    margin-top: 30px; }
+
+.partenaires {
+  padding: 50px 0; }
+  .partenaires .logos-partenaires {
+    padding: 0px 10px; }
+
+@media screen and (max-width: 992px) {
+  .artiste-avant .image-artiste-avant {
+    background-position: 62% 50%; }
+    .artiste-avant .image-artiste-avant .gradient {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+      background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 16%, transparent 68%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 16%, transparent 68%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-gradient(linear, left top, right top, color-stop(16%, rgba(0, 0, 0, 0.65)), color-stop(68%, transparent));
+      background: -o-linear-gradient(left, rgba(0, 0, 0, 0.65) 16%, transparent 68%);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 16%, transparent 68%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+      /* IE6-9 */
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    .artiste-avant .image-artiste-avant .texte-artiste-avant {
+      margin: 40px 20px;
+      position: absolute; }
+      .artiste-avant .image-artiste-avant .texte-artiste-avant .une {
+        font-size: 20px; }
+      .artiste-avant .image-artiste-avant .texte-artiste-avant hr {
+        width: 20%; }
+      .artiste-avant .image-artiste-avant .texte-artiste-avant .date {
+        margin-bottom: 30px; }
+  .a-propos p {
+    padding: 20px; }
+  .partenaires .row div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .partenaires .row div .logos-partenaires {
+      margin-bottom: 20px; } }

@@ -1,0 +1,90 @@
+.artiste-solo {
+    .image-couv {
+        height: 500px;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color:#00e5c4;
+        padding: 60px 0 0px 0;
+        text-transform: uppercase;
+    }
+
+    .infos-texte{
+        margin-top: 30px;
+        .cadre-achat{
+            background: black;
+            color: white;
+            padding: 30px;
+            .date {
+                color: #00e5c4;
+                font-weight: 600;
+                font-size: 22px;
+                margin-bottom: 0;
+            }
+            .lieu {
+                margin:20px 0;
+            }
+            .nom-artiste {
+                font-weight: 600;
+                font-size: 22px;
+            }
+            .placeholder {
+                width: 17px;
+                margin-right: 5px;
+                margin-top: -3px;
+            }
+            .prix-en-ligne{
+                color:#00e5c4;
+            }
+            .btn-acheter-billet{
+                margin-top: 30px;
+            }
+        }
+        .partie-texte{
+            padding-left:50px;
+        }
+    }
+    .retour-prog {
+        text-decoration: none;
+        color: inherit;
+        margin: 15px 0px 40px 0px;
+        display: block;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .programmation-miniature {
+        background-size: 100%;
+        background-position: inherit;
+    }
+    iframe {
+        max-width: 300px;
+        max-height: 190px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .artiste-solo {
+        .image-couv {
+            height: 200px;
+        }
+        h1 {
+            padding-left: 20px;
+        }
+
+        .infos-texte{
+            .cadre-achat{
+                padding: 20px;
+            }
+            .partie-texte{
+                padding:40px 20px;
+            }
+        }
+        .retour-prog {
+            margin: 15px 0px 40px 20px;
+        }
+    }
+}
